@@ -41,7 +41,6 @@ void server() {
 }
 
 int main() {
-
     while((i = fork()) == -1);
     if(!i) server();
     while((i = fork()) == -1);

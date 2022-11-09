@@ -14,9 +14,10 @@ struct msgform {
 } msg;
 
 int msgqid, i;
+
 /**
  * 客户端进程传输mtype和mtrex, mtype控制是否结束
-*/
+ */
 void client() {
     int i;
     msgqid = msgget(MSGKEY, 0777);
@@ -30,9 +31,10 @@ void client() {
     }
     exit(0);
 }
+
 /**
  * 服务端进程接收客户端发送的消息
-*/
+ */
 void server() {
     msgqid = msgget(MSGKEY, 0777|IPC_CREAT);
     do {
@@ -44,7 +46,6 @@ void server() {
 }
 
 int main() {
-
     while((i = fork()) == -1);
     if(!i) server();
     while((i = fork()) == -1);
