@@ -7,7 +7,7 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "${file}",
+                "/home/des/Desktop/os/ex4/*.c",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],

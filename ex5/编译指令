@@ -1,0 +1,1 @@
+gcc -o main main.c access.c ballfre.c close.c create.c delete.c dir.c dirlt.c  format.c halt.c iallfre.c igetput.c install.c log.c name.c open.c rdwt.c
