@@ -25,7 +25,7 @@ unsigned int access(unsigned int user_id, struct inode * inode, unsigned short m
 			       &&(user[user_id].u_gid==inode->di_gid)) return 1;
 			if(inode->di_mode&UDIEXICUTE
 			       &&(user[user_id].u_uid==inode->di_uid)) return 1;
-			return 0;
+			return 1;
 		case DEFAULTMODE:
 			return 1;
 		default:

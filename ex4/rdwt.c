@@ -90,7 +90,7 @@ unsigned int write(int fd1, char *buf, unsigned int size)
 	sys_ofile[user[user_id].u_ofile[fd1]].f_off+=size;
 	inode->di_size=sys_ofile[user[user_id].u_ofile[fd1]].f_off;
 	return size;
-	}
+}
 
 
 
